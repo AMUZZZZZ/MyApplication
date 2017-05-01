@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.qqdemo.administrator.myapplication.MainActivity">
+
+   <EditText
+       android:id="@+id/ed_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="用户名"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/ed_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="登 录"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_regist"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:text="注 册"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
