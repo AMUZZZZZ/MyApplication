@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                     MyApplication.setUser(user);
                                     Intent Intent = new Intent(MainActivity.this, IndexActivity.class);
                                     startActivity(Intent);
+                                    finish();
 
                                 } else {
                                     Toast.makeText(MainActivity.this, user.getMsg(), Toast.LENGTH_SHORT).show();

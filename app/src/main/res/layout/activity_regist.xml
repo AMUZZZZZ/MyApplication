@@ -21,6 +21,7 @@
 
     <EditText
         android:id="@+id/ed_pwd"
+        android:inputType="numberPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -28,6 +29,7 @@
 
     <EditText
         android:id="@+id/ed_repwd"
+        android:inputType="numberPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

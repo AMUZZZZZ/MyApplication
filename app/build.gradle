@@ -30,8 +30,13 @@ dependencies {
     compile 'com.lzy.net:okgo:2.1.4'
     compile 'com.google.code.gson:gson:2.2.4'
 
-
+    compile 'com.android.support:recyclerview-v7:25.3.1'
     compile('cn.qqtheme.framework:WheelPicker:1.4.5') {
         exclude group: 'com.android.support'
     }
+    compile('cn.qqtheme.framework:FilePicker:1.4.5') {
+        exclude group: 'com.android.support'
+    }
+
+
 }

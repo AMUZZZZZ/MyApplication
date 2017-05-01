@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="文件名"
+        android:textColor="#000"
+        android:textSize="18dp"/>
+
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/downloadSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="--M/--M"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/netSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="---K/s"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="--.--%"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/status"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="大小：5M"/>
+
+    <TextView
+        android:id="@+id/fdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/status"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:text="1996-12-13"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+
+        android:text="下 载"/>
+    <View
+        android:background="#ccc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+</RelativeLayout>
